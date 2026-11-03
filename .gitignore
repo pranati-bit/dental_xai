@@ -1,0 +1,21 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# Exclude raw training image dataset if large (keep results and models)
+data/pics/
+data/pics_old/
+*.zip
+
+# DO NOT ignore model weights needed for inference:
+!results/box_model.npz
+!results/pca_params.npz
+!results/crowding_model.npz
+!results/model_pca.npz
